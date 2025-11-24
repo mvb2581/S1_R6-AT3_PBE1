@@ -4,4 +4,4 @@ const {entregaController} = require('../controller/entregaController');
 
 entregaRoutes.post('/calcular_entrega', entregaController.calcularEntrega);
 
-module.exports = {entregaRoutes}
+module.exports = {entregaRoutes};
