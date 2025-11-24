@@ -8,7 +8,7 @@ const pedidoModel = {
         try {
             await connection.beginTransaction();
 
-            const sqlPedido = `INSERT INTO pedidos (id_cliente_fk, data_pedido, tipo_entrega, distancia_pedido, peso_carga, valor_km_pedido, valor_kg_peso) VALUES (?, ?, ?, ?, ?, ?, ?)`;
+            const sqlPedido = `INSERT INTO pedido (id_cliente, data_pedido, tipo_entrega, distancia_pedido, peso_carga, valor_km_pedido, valor_kg_peso) VALUES (?, ?, ?, ?, ?, ?, ?)`;
 
             const valuesPedido = [pIdCliente, pDataPedido, pTipoEntrega, pDistanciaPedido, pPesoCarga, pValorKmPedido, pValorKgPeso];
 
